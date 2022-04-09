@@ -18,7 +18,33 @@
   --footer-bg-color: #2f303a;
   --logo-color: #000000;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+
 body {
+  margin: 0;
+
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -31,7 +57,18 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
+
+
 /* ----------------Logo----------------- */
+
 .logo {
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
@@ -44,6 +81,21 @@ a {
 }
 
 /* -----------навігація сайту------------ */
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -58,6 +110,11 @@ a {
   color: var(--accent-color);
 }
 
+.contacts {
+  display: flex;
+}
+
+
 .contacts .link {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -68,8 +125,13 @@ a {
 /* -----------------Герой------------------- */
 .hero {
   background-color: var(--footer-bg-color);
+  padding: 452px 200px;
+  
 }
 .hero-title {
+  max-width: 696px;
+  margin-bottom: 30px;
+
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
@@ -78,6 +140,8 @@ a {
   letter-spacing: 0.06em;
 }
 .hero-btn {
+  min-width: 200px;
+  
   font-family: inherit;
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
@@ -95,20 +159,14 @@ a {
 }
 
 /* -------------------Features--------------- */
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+
+.features .container {
+  padding-top: 94px;
 }
 
 .features-list-title {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -124,6 +182,12 @@ a {
 }
 
 /* --------------------About------------------ */
+
+.about .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .about-title, 
 .team-title {
   font-size: 36px;
@@ -135,6 +199,11 @@ a {
 /* --------------------Team-------------------- */
 .team {
   background-color: var(--secondary-bg-color);
+}
+
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-list-title {
@@ -155,6 +224,12 @@ a {
 .footer {
   background-color: var(--footer-bg-color);
 }
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-logo {
   color: var(--primary-bg-color);
   font-family: Raleway, sans-serif;
