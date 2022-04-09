@@ -190,6 +190,8 @@ a {
 
 .about-title, 
 .team-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -207,6 +209,9 @@ a {
 }
 
 .team-list-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
