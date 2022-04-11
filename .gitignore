@@ -104,6 +104,6 @@ dist
 .tern-port
 
 # VS Code file
-.vscode
+.vscode/*
 
 git rm --cached <.vscode>
