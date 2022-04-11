@@ -106,5 +106,5 @@ dist
 # VS Code file
 /.vscode
 
-git rm -r --cached .vscode
+
 
