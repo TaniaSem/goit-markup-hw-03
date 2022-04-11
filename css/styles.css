@@ -69,6 +69,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -166,6 +171,7 @@ a {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .hero-title {
@@ -283,8 +289,13 @@ a {
   margin-right: 0;
 }
 
+.team-text-part {
+  padding-bottom: var(--typical-gap);
+  padding-top: var(--typical-gap);
+  background-color: var(--primary-bg-color);
+}
+
 .team-list-title {
-  margin-top: var(--typical-gap);
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -295,8 +306,6 @@ a {
 }
 
 .team-list-text {
-  margin-bottom: 30px;
-
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -438,6 +447,7 @@ a {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
   border-left: 1px solid;
   border-right: 1px solid;
   border-bottom: 1px solid;
